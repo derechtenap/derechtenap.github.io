@@ -1,0 +1,17 @@
+{
+    "name": "Bogenschützen",
+    "info": "Einheit mit Reichweite. Wirksam gegen entfernte Einheiten. Schwach gegen Plänkler und Einheiten im Nahkampf. <i>Weiterentwicklungen: Angriffsstärke, Reichweite, Rüstung (Schmiede); Angriffsstärke, Treffsicherheit (Universität); Treffsicherheit, zum Armbruchstützen 125 N, 75G (Schießanlage); schnelleres Erschaffen (Burg); mehr Widerstand gegen Möche (Kloster)</i>",
+    "kosten": {
+        "holz": 25,
+        "nahrung": 0,
+        "gold": 45,
+        "stein": 0
+    },
+    "werte": {
+        "lebenspunkte": 30,
+        "angriff": 4,
+        "ruestung": 0,
+        "fernkampfruestung": 0,
+        "reichweite": 4
+    }
+}

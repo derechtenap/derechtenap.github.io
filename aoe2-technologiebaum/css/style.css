@@ -1,0 +1,93 @@
+@charset "UTF-8";
+
+/*
+    style.css
+    ---------------------------------------
+    Version: 0.1.1
+    Datum: 23.01.2020
+    ---------------------------------------
+
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    direction: ltr;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgba(0, 0, 0, 1);
+    background-color: rgba(222, 184, 135, 1);
+}
+
+/** --- GRID --- **/
+/** Source: http://j4n.co/blog/Creating-your-own-css-grid-system **/
+
+.grid-container {
+    width: 100%;
+}
+
+.row::before,
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+[class*='col-'] {
+    float: left;
+    min-height: 1px;
+    width: 16.666%;
+    padding: 12px;
+}
+
+.col-1 {
+    width: 16.666%;
+}
+
+.col-2 {
+    width: 33.333%;
+}
+
+.col-3 {
+    width: 50%;
+}
+
+.col-4 {
+    width: 66.664%;
+}
+
+.col-5 {
+    width: 83.333%;
+}
+
+.col-6 {
+    width: 100%;
+}
+
+/** --- --- **/
+
+hr {
+    height: 1px;
+    color: rgba(0, 0, 0, 1); /** IE **/
+    border-width: 0;
+    background-color: rgba(0, 0, 0, 1); /** Firefox, Opera, Chrome & Safari **/
+}
+
+select {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.text-center {
+    text-align: center;
+}
+
+#techtree {
+    border-left: 1px solid rgba(0, 0, 0, 1);
+}

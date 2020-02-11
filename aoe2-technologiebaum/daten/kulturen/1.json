@@ -1,0 +1,21 @@
+{
+    "id": 1,
+    "name": "Azteken",
+    "typ": "Unberittenes Volk von Mönchen",
+    "bonus": {
+        "1": "Dorbewohner tragen +5",
+        "2": "Militäreinheiten 15% schneller erschaffen",
+        "3": "Mönche +5 LP pro Kloster-Technologie",
+        "4": "Start mit +50 Gold"
+    },
+    "seinheit": "Spezialeinheit: Jaguarkrieger (Infanterie)",
+    "stech": {
+        "1": "<i>Speerschleuder</i> (Plänkler +1 Angriffsstärke, +1 Reichweite)",
+        "2": "<i>Blumenkriege</i> (+4 Angriffsstärke für Infanterie)"
+    },
+    "teambonus": "Teambonus: Reliquien erzeugen +33% Gold",
+    "einheit": {
+    },
+    "tech": {
+    }
+}
