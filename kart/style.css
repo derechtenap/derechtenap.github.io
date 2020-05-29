@@ -30,7 +30,9 @@ h2 {
   padding-bottom: 1rem;
 }
 
-h1, h2, var {
+h1,
+h2,
+var {
   padding-left: 1rem;
 }
 
@@ -39,26 +41,34 @@ var {
           box-decoration-break: clone;
 }
 
-fieldset, input, .btn-sub, .container-warning {
+fieldset,
+input,
+.btn-sub,
+.container-warning {
   border-radius: 0.125rem;
 }
 
-fieldset, .btn-sub {
+fieldset,
+.btn-sub {
   all: unset;
 }
 
-fieldset, input {
+fieldset,
+input {
   border: 1px solid #d1d8e0;
 }
 
-fieldset, .container-warning {
+fieldset,
+.container-warning {
   padding: 1rem;
 }
 
-fieldset, input, label {
+fieldset,
+input,
+label {
   display: block;
   font-size: 0.95rem;
-  width: 100%;
+  width: calc(100% - 2rem);
 }
 
 input {
@@ -71,9 +81,28 @@ label {
   padding-bottom: 0.5rem;
 }
 
+footer {
+  margin-top: 2rem;
+  border-top: 1px solid #d1d8e0;
+  color: #48586a;
+  padding-left: 1rem;
+  padding-top: 1rem;
+  text-align: center;
+}
+
+footer a {
+  color: #48586a;
+  text-decoration: none;
+  font-weight: bolder;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
 .container {
   padding: 1rem;
-  width: calc(100vw - 2rem);
+  width: calc((100vw - 2rem) - 2px);
 }
 
 @media (min-width: 992px) {
@@ -88,6 +117,7 @@ label {
   background-color: #3867d6;
   color: #ffffff;
   cursor: pointer;
+  border-radius: 5px;
 }
 
 .btn-sub:hover {

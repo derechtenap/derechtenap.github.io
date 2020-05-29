@@ -1,0 +1,4 @@
+/node_modules
+# Bis zum Projekt Release
+/aoe2stats
+package-lock.json
