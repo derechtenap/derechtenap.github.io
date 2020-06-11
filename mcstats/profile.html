@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil - Pizza Bros. Minecraft Server</title>
+
+    <link rel="stylesheet" href="fend/bootstrap.min.css">
+    <link rel="stylesheet" href="fend/Chart.min.css">
+
+    <link rel="shortcut icon" href="img/png/unknown.png" data-icon>
+
+    <style>
+        .bg-ach-normal {
+            position: relative;
+            background-image: url('img/png/ach/Advancement-plain-raw.png');
+            width: 52px;
+            height: 52px;
+        }
+
+        .bg-ach-normal>img {
+            position: absolute;
+            left: 8px;
+            top: 8px;
+        }
+    </style>
+
+    <script src="fend/jquery.min.js" defer></script>
+    <script src="fend/bootstrap.bundle.min.js" defer></script>
+    <script src="fend/Chart.bundle.min.js"></script>
+    <script src="main.js" defer></script>
+</head>
+
+<body class="w-100 h-100">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark border-bottom border-secondary">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Pizza Bros. Minecraft Server</a>
+            <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Spieler
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" data-player-select>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- player_card -->
+    <section class="bg-light p-5 shadow">
+        <header class="container">
+            <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                Die Statistiken wurden zuletzt aktualisiert am <strong>11.06.2020 um 04:11</strong>
+                <button type="button" class="close" data-dismiss="alert" aria-label="close">&times;</button>
+            </div>
+            <div class="d-flex flex-row flex-column">
+                <div class="p-2">
+                    <div class="d-flex">
+                        <picture class="p-2">
+                            <source srcset="img/webp/unknown.webp" type="image/webp" data-img-avatar="webp">
+                            <source srcset="img/png/unkown.png" type="image/png" data-img-avatar="png">
+                            <img class="img-fluid border rounded shadow-sm" src="img/png/unknown.png" alt="Avatar" title="Avatar" data-img-avatar="fallback">
+                        </picture>
+                        <div class="p-2">
+                            <h1 data-name data-player-id="0">Profil auswählen...</h1>
+                            <small class="d-block text-muted" data-player-joined>Beigetreten am:</small>
+                        </div>
+                    </div>
+                    <div class="p-2">
+
+                        <div class="pt-3">
+                            <ul class="list-group list-group-horizontal-md">
+                                <li class="list-group-item border-0 bg-light pl-0 flex-fill">
+                                    <h5 class="text-monospace h4" data-stat-playtime>0 Std.</h5>
+                                    <span class="d-block">Spielzeit</span>
+                                </li>
+                                <li class="list-group-item border-0 bg-light pl-0 flex-fill">
+                                    <h5 class="text-monospace h4" data-stat-block-mined>0</h5>
+                                    <span class="d-block">Blöcke<br>abgebaut</span>
+                                </li>
+                                <li class="list-group-item border-0 bg-light pl-0 flex-fill">
+                                    <h5 class="text-monospace h4" data-stat-item-crafted>0</h5>
+                                    <span class="d-block">Items<br>gecrafted</span>
+                                </li>
+                                <li class="list-group-item border-0 bg-light pl-0 flex-fill">
+                                    <h5 class="text-monospace h4" data-stat="mob_kills">0</h5>
+                                    <span class="d-block">Mobs<br>getötet</span>
+                                </li>
+                                <li class="list-group-item border-0 bg-light pl-0 flex-fill">
+                                    <h5 class="text-monospace h4" data-stat-distance>0 km</h5>
+                                    <span class="d-block">Distanz</span>
+                                </li>
+                                <li class="list-group-item border-0 bg-light pl-0 flex-fill">
+                                    <h5 class="text-monospace h4" data-stat-damage-dealt>0 &#9829;</h5>
+                                    <div class="d-block" style="cursor: help;" data-toggle="tooltip" data-placement="left" title="Es zählt nur Schaden, welcher im Nahkampf getätigt wurde.">
+                                        <span>Verursachter<br>Schaden</span>
+                                        <img src="node_modules/bootstrap-icons/icons/question-circle-fill.svg" style="vertical-align: middle" width="18" height="18" alt="">
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </header>
+    </section>
+    <!-- /player_card -->
+
+    <section class="container mt-5">
+
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <a class="nav-link active" id="allgemein-tab" data-toggle="tab" href="#allgemein" role="tab" aria-controls="allgemein" aria-selected="true">Allgemein</a>
+            </li>
+            <li class="nav-item" role="presentation">
+                <a class="nav-link" id="bergbau-tab" data-toggle="tab" href="#bergbau" role="tab" aria-controls="bergbau" aria-selected="false">Bergbau</a>
+            </li>
+            <li class="nav-item" role="presentation">
+                <a class="nav-link" id="kampf-tab" data-toggle="tab" href="#kampf" role="tab" aria-controls="kampf" aria-selected="false">Kampf</a>
+            </li>
+        </ul>
+
+        <!-- cnt -->
+        <div class="tab-content mt-3 py-3" id="myTabContent">
+            <div class="tab-pane fade show active" id="allgemein" role="tabpanel" aria-labelledby="allgemein-tab">
+
+                <div class="card-group mb-1">
+
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title h4" data-stat="animals_bred">0</h5>
+                            <h6 class="card-subtitle mb-2 text-uppercase">Tiere gezüchtet</h6>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title h4" data-stat="enchant_item">0</h5>
+                            <h6 class="card-subtitle mb-2 text-uppercase">Gegenstände verzaubert</h6>
+                            <small class="text-secondary">Anzahl der am Zaubertisch verzauberten Gegenstände</small>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title h4" data-stat="drop">0</h5>
+                            <h6 class="card-subtitle mb-2 text-uppercase">Items fallengelassen</h6>
+                            <small class="text-secondary">Anzahl der fallengelassenen Gegenstände inkl. der Drops beim Tod</small>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title h4" data-stat="fish_caught">0</h5>
+                            <h6 class="card-subtitle mb-2 text-uppercase">Fische gefangen</h6>
+                            <small class="text-secondary">Geangelter Trödel oder Schätze zählen nicht als gefangene Fische</small>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="card-group mb-1">
+
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title h4" data-stat="jump">0</h5>
+                            <h6 class="card-subtitle mb-2 text-uppercase">Sprünge</h6>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title h4" data-stat="sleep_in_bed">0</h5>
+                            <h6 class="card-subtitle mb-2 text-uppercase">In Betten geschlafen</h6>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title h4" data-stat="interact_with_crafting_table">0</h5>
+                            <h6 class="card-subtitle mb-2 text-uppercase">Mit Werkbank interagiert</h6>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title h4" data-stat="play_record">0</h5>
+                            <h6 class="card-subtitle mb-2 text-uppercase">Schallplatten abgespielt</h6>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="card-group mb-1">
+
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title h4" data-stat="deaths">0</h5>
+                            <h6 class="card-subtitle mb-2 text-uppercase">Tode</h6>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title h4" data-stat="player_kills">0</h5>
+                            <h6 class="card-subtitle mb-2 text-uppercase">Spieler getötet</h6>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title h4" data-stat-playtime-death>0 Std.</h5>
+                            <h6 class="card-subtitle mb-2 text-uppercase">Spielzeit seit dem letztem Tod</h6>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title h4" data-stat-broken-items>0</h5>
+                            <h6 class="card-subtitle mb-2 text-uppercase">Gegenstände verbraucht</h6>
+                            <small class="text-secondary">Alle verbauchten Gegenstände (z.B. Spitzhacken, Schaufeln etc.)</small>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="card-group">
+
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-subtitle my-2 pb-2 h6 text-uppercase border-bottom">Diagramm: Distanz (in km)</h5>
+
+
+                            <div class="container-chart my-2" data-chart="stat_distance">
+                                <canvas id="stat_distance" width="400" height="400"></canvas>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <h3 class="my-5">Alle einzigartigen Statistiken in der Übersicht: <small class="text-secondary">(Aktuell noch nicht gut formatiert!)</small></h3>
+                <table class="table table-striped table-bordered table-hover border rounded">
+                    <thead>
+                        <tr>
+                            <th>Statistik</th>
+                            <th>Wert</th>
+                        </tr>
+                    </thead>
+                    <tbody data-table-custom-stats>
+                    </tbody>
+                </table>
+
+            </div>
+            <div class="tab-pane fade" id="bergbau" role="tabpanel" aria-labelledby="bergbau-tab">
+
+                <div class="card-group mb-1">
+
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title h4" data-stat="broken_pickaxe">0</h5>
+                            <h6 class="card-subtitle mb-2 text-uppercase">Spitzhacken verbaucht</h6>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title h4" data-stat="mined_ores">0</h5>
+                            <h6 class="card-subtitle mb-2 text-uppercase">Erze abgebaut</h6>
+                            <small class="text-secondary">Als Erze zählen: Steinkohle, Eisen, Gold, Diamant, Redstone, Smaragd und Netherquarz</small>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title h4" data-stat="crafted_torch">0</h5>
+                            <h6 class="card-subtitle mb-2 text-uppercase">Fackeln hergestellt</h6>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title h4" data-stat="used_pickaxe">0</h5>
+                            <h6 class="card-subtitle mb-2 text-uppercase">Spitzhacken benutzt</h6>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="tab-pane fade" id="kampf" role="tabpanel" aria-labelledby="kampf-tab">
+                <div class="container-chart" data-chart="chart_mobs">
+                    <canvas id="chart-mobs" width="400" height="400"></canvas>
+                </div>
+                <h3 class="mb-5">Mobs erledigt</h3>
+                <table class="table table-striped table-bordered table-hover border rounded">
+                    <thead>
+                        <tr>
+                            <th>Mob</th>
+                            <th>Wert</th>
+                        </tr>
+                    </thead>
+                    <tbody data-table-mobs-killed>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <!-- /cnt -->
+
+    </section>
+
+    <footer class="mt-5 p-5 bg-dark text-white text-center">
+
+        <p>Es handelt sich um eine Webseite, welche ausschließlich für private Zwecke genutzt wird. Für die Kontaktaufnahme bitte GitHub benutzen.</p>
+        <p>Minecraft is copyright Mojang AB and is not affiliated with this site. Get the game!</p>
+
+    </footer>
+
+</body>
+
+</html>

@@ -2,3 +2,7 @@
 # Bis zum Projekt Release
 /aoe2stats
 package-lock.json
+mcstats/node_modules
+mcstats/.jsbeautifyrc
+mcstats/bücher_mc.txt
+mcstats/OLD
