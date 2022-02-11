@@ -1,0 +1,14 @@
+[
+  {
+    "name": "Über mich",
+    "href": "/about/"
+  },
+  {
+    "name": "Projekte",
+    "href": "/projects/"
+  },
+  {
+    "name": "Kontakt",
+    "href": "/contact/"
+  }
+]
