@@ -1,5 +1,5 @@
 <svelte:head>
-  <title>Tim Deres &ndash; Frontend Web Developer</title>
+  <title>Tim Deres &mdash; Frontend Web Developer</title>
 </svelte:head>
 
 INDEX
