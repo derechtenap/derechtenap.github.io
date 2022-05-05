@@ -1,14 +1,14 @@
 [
   {
     "name": "Über mich",
-    "href": "/about/"
+    "href": "/ueber-mich/"
   },
   {
     "name": "Projekte",
-    "href": "/projects/"
+    "href": "/projekte/"
   },
   {
     "name": "Kontakt",
-    "href": "/contact/"
+    "href": "/kontakt/"
   }
 ]
