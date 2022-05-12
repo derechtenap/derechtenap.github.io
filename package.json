@@ -6,19 +6,15 @@
     "build": "svelte-kit build",
     "package": "svelte-kit package",
     "preview": "svelte-kit preview",
-    "lint": "prettier --ignore-path .gitignore --check --plugin-search-dir=. .",
-    "format": "prettier --ignore-path .gitignore --write --plugin-search-dir=. ."
+    "prepare": "svelte-kit sync"
   },
   "devDependencies": {
     "@sveltejs/adapter-auto": "next",
     "@sveltejs/kit": "next",
-    "autoprefixer": "^10.4.2",
-    "postcss": "^8.4.5",
-    "prettier": "^2.5.1",
-    "prettier-plugin-svelte": "^2.6.0",
-    "prettier-plugin-tailwindcss": "^0.1.5",
-    "svelte": "^3.46.4",
-    "tailwindcss": "^3.0.24"
+    "bulma": "^0.9.4",
+    "sass": "^1.49.11",
+    "svelte": "^3.46.0",
+    "svelte-preprocess": "^4.10.5"
   },
   "type": "module"
 }
