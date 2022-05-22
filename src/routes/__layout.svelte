@@ -1,6 +1,9 @@
 <script>
-  import '../app.css';
+  import "../app.scss";
+  import Nav from "$lib/Nav.svelte";
+  import Footer from "$lib/Footer.svelte";
 </script>
 
-<!-- slot = page content -->
+<Nav />
 <slot />
+<Footer />
