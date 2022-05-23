@@ -1,7 +1,5 @@
 import adapter from "@sveltejs/adapter-static";
 
-const dev = "production" === "development";
-
 /** @type {import(""@sveltejs/kit").Config} */
 const config = {
   kit: {
@@ -11,8 +9,7 @@ const config = {
       fallback: "index.html"
     }),
     paths: {
-      // change below to your repo name
-      base: dev ? "" : "/derechtenap.github.io",
+      base: "",
     },
   }
 };
