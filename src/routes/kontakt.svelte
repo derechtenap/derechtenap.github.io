@@ -6,7 +6,6 @@
         Tim Deres <br />
         Auf der Ratschelle 15 <br />
         58840 Plettenberg
-        <p class="mt-5">E-Mail: <a href="mailto:">timderes@gmail.com</a></p>
       </address>
 
       <hr />
