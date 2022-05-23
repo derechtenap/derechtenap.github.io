@@ -9,6 +9,7 @@ const config = {
       fallback: "index.html"
     }),
     paths: {
+      assets: "https://derechtenap.github.io",
       base: "",
     },
   }
