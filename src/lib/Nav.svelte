@@ -42,7 +42,6 @@
     const navbarMenu = document.querySelector("#nav-links");
 
     burgerIcon.addEventListener("click", () => {
-      console.log("test");
       // https://bulma.io/documentation/components/navbar/#navbar-menu
       // The navbar-menu is hidden on touch devices (< 1024px). Unless
       // the modifier class `is-active` is added.
