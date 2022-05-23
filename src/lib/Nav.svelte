@@ -87,7 +87,7 @@
             <div class="buttons">
               {#each buttons as link}
                 {#if link.isPrimary}
-                  <a class="button is-link" href={link.href}>
+                  <a class="button is-primary" href={link.href}>
                     {#if link.isIcon}
                       <i
                         class={`bi-${link.name.toLowerCase()}`}

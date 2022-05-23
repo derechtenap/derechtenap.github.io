@@ -62,7 +62,7 @@
         <div class="field-body">
           <div class="field">
             <div class="control">
-              <button class="button is-link">Absenden</button>
+              <button class="button is-primary">Absenden</button>
             </div>
           </div>
         </div>
