@@ -56,11 +56,6 @@
   });
 </script>
 
-<div class="notification is-danger has-text-centered" style="border-radius: 0;">
-  <b>Achtung!</b> Diese Webseite befindet sich aktuell noch im Aufbau. Kommen Sie
-  in den nächsten Wochen wieder, um die fertige Version zu sehen.
-</div>
-
 <div class="hero-head">
   <nav class="navbar is-white has-background-white" aria-label="Navigation">
     <div class="container">
