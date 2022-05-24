@@ -3,10 +3,12 @@
 // Custom colors
 $midnight: #202531;
 $light: #e3f4fc;
+$blue: #2d98da;
 
 // Override Bulma variables, before importing the framework
 // $turquoise: $midnight;
 // $white-ter: $light;
+$primary: $blue;
 
 // Utilities & Resets
 @import "bulma/sass/base/minireset";
