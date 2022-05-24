@@ -21,6 +21,7 @@ $primary: $blue;
 // Elements
 @import "bulma/sass/elements/button";
 @import "bulma/sass/elements/container";
+@import "bulma/sass/elements/image";
 @import "bulma/sass/elements/title";
 
 // Form
@@ -29,6 +30,7 @@ $primary: $blue;
 @import "bulma/sass/form/tools";
 
 // Grid
+@import "bulma/sass/grid/columns";
 
 // Helpers
 @import "bulma/sass/helpers/color";
