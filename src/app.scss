@@ -13,6 +13,10 @@ $primary: $blue;
   border-radius: 4px;
 }
 
+.line-height-text {
+  line-height: 1.75 !important;
+}
+
 // Utilities & Resets
 @import "bulma/sass/base/minireset";
 @import "bulma/sass/base/generic";
