@@ -8,6 +8,11 @@ $blue: #2d98da;
 // Override Bulma variables, before importing the framework
 $primary: $blue;
 
+// Globally used custom styles
+.image > img {
+  border-radius: 4px;
+}
+
 // Utilities & Resets
 @import "bulma/sass/base/minireset";
 @import "bulma/sass/base/generic";
