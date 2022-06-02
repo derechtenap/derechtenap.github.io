@@ -5,5 +5,7 @@
 </script>
 
 <Nav />
-<slot />
+<div class="mx-2">
+  <slot />
+</div>
 <Footer />
