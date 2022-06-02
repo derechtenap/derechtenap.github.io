@@ -5,13 +5,13 @@
 <div class="hero is-fullheight-with-navbar">
   <div class="hero-body">
     <div class="container">
-      <p class="title is-1 pb-5">Hallo, ich bin Tim Deres.</p>
-      <p class="subtitle is-3">
-        Student @ Fachhochschule Südwestfalen in Hagen
-        <span class="has-text-link">&ndash;</span>
-        Wirtschaftsinformatik
-        <span class="has-text-link">&mdash;</span>
-        <b class="has-text-link">Frontend Web Developer</b>
+      <p class="title is-spaced is-size-2-mobile is-size-1">
+        Hallo, ich bin Tim Deres.
+      </p>
+      <p class="subtitle is-size-4-mobile is-size-3 line-height-text">
+        Student @ Fachhochschule Südwestfalen in Hagen &ndash;
+        Wirtschaftsinformatik &mdash;
+        <b class="has-text-primary">Frontend Web Developer</b>
       </p>
     </div>
   </div>
