@@ -52,3 +52,6 @@ $primary: $blue;
 // Bootstrap Icons
 // TODO: Currently this way imports all icons... Find a better way :)
 @import "bootstrap-icons/font/bootstrap-icons";
+
+// SplideJS theme
+@import "@splidejs/svelte-splide/css";
