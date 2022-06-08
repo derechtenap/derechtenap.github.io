@@ -1,3 +1,4 @@
+<!-- TODO: Automatically close menu when menu item is clicked -->
 <script>
   import { onMount } from "svelte";
 
