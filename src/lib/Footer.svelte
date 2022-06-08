@@ -4,6 +4,8 @@
   import bulmaLogo from "$lib/assets/png/madeWithBulma.png";
   import footerIcons from "$lib/assets/json/footerIcons.json";
 
+  import signature from "$lib/assets/svg/signature.svg";
+
   const currentYear = new Date().getFullYear();
 </script>
 
@@ -17,6 +19,8 @@
   {/each}
 
   <hr />
+
+  <img class="signature" src={signature} alt="Unterschrift von Tim Deres" />
 
   <p class="has-text-weight-semibold has-text-grey-darker mb-5">
     &copy; {currentYear} &mdash; Erstellt von Tim Deres
@@ -51,5 +55,8 @@
   .button {
     background-color: transparent !important;
   }
+
+  .signature {
+    width: 200px;
   }
 </style>
