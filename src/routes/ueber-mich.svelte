@@ -1,6 +1,30 @@
 <script>
   import Container from "$lib/Container.svelte";
   import PageTitle from "$lib/PageTitle.svelte";
+  import SkillIcon from "$lib/SkillIcon.svelte";
+  import skills from "$lib/assets/json/skills.json";
+  import { Splide, SplideSlide } from "@splidejs/svelte-splide";
+
+  const splideOptions = {
+    rewind: true,
+    autoplay: true,
+    perPage: 3,
+    perMove: 1,
+    arrows: true,
+    pagination: false,
+    speed: 2000,
+    rewindSpeed: 3000,
+    breakpoints: {
+      640: {
+        perPage: 1,
+      },
+      920: {
+        perPage: 2,
+      },
+    },
+    // TODO: Set aria-labels --> https://splidejs.com/guides/i18n/
+    i18n: {},
+  };
 </script>
 
 <svelte:head>
@@ -38,4 +62,19 @@
     </div>
   </div>
 
+  <h3 class="title is-4 mt-6">Sprachen & Frameworks</h3>
+
+  <div class="p-6 has-background-white-ter rounded">
+    <Splide
+      options={splideOptions}
+      aria-label="Diese Sprachen und Frameworks benutze ich..."
+    >
+      {#each skills as skill}
+        <SplideSlide class="has-text-centered">
+          <SkillIcon {skill} />
+          <p class="is-size-5">{skill.name}</p>
+        </SplideSlide>
+      {/each}
+    </Splide>
+  </div>
 </Container>
