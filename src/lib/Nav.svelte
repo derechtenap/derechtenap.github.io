@@ -1,6 +1,8 @@
 <script>
   import { onMount } from "svelte";
 
+  import signature from "$lib/assets/svg/signature.svg";
+
   let expanded = false;
 
   const links = [
@@ -59,8 +61,9 @@
   <nav class="navbar is-white has-background-white" aria-label="Navigation">
     <div class="container">
       <div class="navbar-brand">
-        <!-- TODO: Replace text with handwritten signature -->
-        <a class="navbar-item has-text-weight-bold" href="/">Tim Deres</a>
+        <a class="navbar-item has-text-weight-bold" href="/">
+          <img src={signature} alt="Unterschrift von Tim Deres" />
+        </a>
 
         <span
           class="navbar-burger"
