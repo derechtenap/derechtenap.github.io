@@ -49,6 +49,7 @@
   }
 
   .button {
-    background-color: hsl(0deg, 0%, 98%) !important;
+    background-color: transparent !important;
+  }
   }
 </style>
