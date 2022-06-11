@@ -15,8 +15,6 @@ npm run dev -- --open
 
 ## Building and Previewing
 
-:warning: Before creating a production version of your app, install an adapter for your target environment.
-
 ```bash
 npm run build
 
