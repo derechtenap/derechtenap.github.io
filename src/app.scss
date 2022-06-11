@@ -11,6 +11,8 @@ $radius: 12px;
 
 // Globally used custom styles
 .image > img,
+.card,
+.card-image,
 .rounded {
   border-radius: $radius !important;
 }
