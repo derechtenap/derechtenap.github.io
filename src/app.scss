@@ -7,11 +7,12 @@ $blue: #2d98da;
 
 // Override Bulma variables, before importing the framework
 $primary: $blue;
+$radius: 12px;
 
 // Globally used custom styles
 .image > img,
 .rounded {
-  border-radius: 4px;
+  border-radius: $radius !important;
 }
 
 .line-height-text {
