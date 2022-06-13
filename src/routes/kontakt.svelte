@@ -6,6 +6,10 @@
   import InputTextField from "$lib/InputTextField.svelte";
 </script>
 
+<svelte:head>
+  <title>Kontakt &ndash; Tim Deres &mdash; Frontend Web Developer</title>
+</svelte:head>
+
 <Container>
   <PageTitle title="Kontakt" />
   <div class="columns">
