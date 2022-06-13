@@ -39,9 +39,30 @@
       {/each}
     </div>
   </div>
+  <hr />
+  <div class="columns">
+    <form class="column is-6 pb-6">
+      <InputTextField id="name" label="Name" placeholder="Max Mustermann" />
+      <InputTextField
+        id="mail"
+        label="E-Mail-Adresse"
+        placeholder="max@mustermann.de"
+      >
+        Die E-Mail Adresse wird zur Kontaktaufnahme benötigt.
+      </InputTextField>
+      <InputTextField
+        id="subject"
+        label="Betreff"
+        placeholder="Anfrage wegen einer Webseite"
+      >
+        Worum geht es in Ihrer Anfrage? Ein neues Projekt? Haben Sie eine Frage?
+      </InputTextField>
 
+      <textarea class="textarea" placeholder="Ihre Nachricht..." required />
 
+      <div class="control">
+        <button class="button is-primary mt-5" type="submit">Abschicken</button>
       </div>
-    </div>
+    </form>
   </div>
 </Container>
