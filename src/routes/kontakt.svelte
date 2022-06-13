@@ -17,6 +17,13 @@
         58840 Plettenberg
       </address>
 
+      <p>E-Mail: <a href="mailto:">tim@deres.de</a></p>
+      <p>Telefon: <a href="tel:">02391/12012312</a></p>
+      <p>
+        Webseite: <ExternalLink link="https://derechtenap.github.io">
+          https://derechtenap.github.io
+        </ExternalLink>
+      </p>
     </div>
 
 
