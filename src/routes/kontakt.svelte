@@ -8,64 +8,9 @@
         58840 Plettenberg
       </address>
 
-      <hr />
 
-      <div class="field is-horizontal">
-        <div class="field-label is-normal has-text-left">
-          <label class="label" for="field1">Absender</label>
-        </div>
-        <div class="field-body">
-          <div class="field">
-            <p class="control is-expanded">
-              <input class="input" type="text" placeholder="Name" id="field1" />
-            </p>
-          </div>
-        </div>
-      </div>
 
-      <div class="field is-horizontal">
-        <div class="field-label is-normal has-text-left">
-          <label class="label" for="field2">Thema</label>
-        </div>
-        <div class="field-body">
-          <div class="field">
-            <div class="control">
-              <input
-                class="input"
-                type="text"
-                placeholder="Überschrift der E-Mail"
-                id="field2"
-              />
-            </div>
-          </div>
-        </div>
-      </div>
 
-      <div class="field is-horizontal">
-        <div class="field-label is-normal has-text-left">
-          <label class="label" for="field3">Anfrage</label>
-        </div>
-        <div class="field-body">
-          <div class="field">
-            <div class="control">
-              <textarea
-                class="textarea"
-                placeholder="Beschreiben Sie kurz ihr Anliegen."
-                id="field3"
-              />
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="field is-horizontal mt-5 has-text-right">
-        <div class="field-body">
-          <div class="field">
-            <div class="control">
-              <button class="button is-primary">Absenden</button>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
   </div>
