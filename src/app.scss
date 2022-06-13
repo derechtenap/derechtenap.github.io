@@ -9,18 +9,6 @@ $blue: #2d98da;
 $primary: $blue;
 $radius: 12px;
 
-// Globally used custom styles
-.image > img,
-.card,
-.card-image,
-.rounded {
-  border-radius: $radius !important;
-}
-
-.line-height-text {
-  line-height: 1.75 !important;
-}
-
 // Utilities & Resets
 @import "bulma/sass/base/minireset";
 @import "bulma/sass/base/generic";
@@ -59,3 +47,9 @@ $radius: 12px;
 
 // SplideJS theme
 @import "@splidejs/svelte-splide/css";
+
+// Custom CSS Styles
+@import "scss/contact";
+@import "scss/inputs";
+@import "scss/text";
+@import "scss/radius";
