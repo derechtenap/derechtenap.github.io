@@ -26,6 +26,15 @@
       </p>
     </div>
 
+    <div class="column">
+      <p class="is-italic">Oder kontaktieren Sie mich über diese Dienste</p>
+      {#each footerIcons as icon}
+        <i
+          class={`bi-${icon.name.toLowerCase()} is-size-2 has-text-primary mr-5`}
+        />
+      {/each}
+    </div>
+  </div>
 
 
       </div>
