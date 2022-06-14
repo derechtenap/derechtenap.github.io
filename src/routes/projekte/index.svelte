@@ -1,6 +1,20 @@
+<script context="module">
+  export const load = async ({ fetch }) => {
+    const projects = await fetch("/api/projekte.json");
+    const allProjects = await projects.json();
+
+    return {
+      props: {
+        projects: allProjects,
+      },
+    };
+  };
+</script>
+
 <script>
   import Container from "$lib/Container.svelte";
   import PageTitle from "$lib/PageTitle.svelte";
+  export let projects;
 </script>
 
 <svelte:head>
