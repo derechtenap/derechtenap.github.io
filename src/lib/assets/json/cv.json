@@ -1,0 +1,27 @@
+[
+  {
+    "title": "Studium Wirtschaftsinformatik",
+    "timePeriod": "Ab 2017",
+    "location": "Fachhochschule Südwestfalen",
+    "city": "Hagen",
+    "icon": "mortarboard",
+    "skills": [
+      "Webtechnologie",
+      "Datenbanken",
+      "Projektmanagement",
+      "Usability Engineering"
+    ]
+  },
+  {
+    "title": "Informationstechnischer Assistent (ITA) + Fachoberschulreife",
+    "timePeriod": "2015 - 2017",
+    "location": "Berufskolleg für Technik",
+    "city": "Lüdenscheid",
+    "icon": "building",
+    "skills": [
+      "Rechner- und Systemtechnik",
+      "Betriebssysteme und Netzwerke",
+      "Wirtschafts- und Geschäftsprozesse"
+    ]
+  }
+]

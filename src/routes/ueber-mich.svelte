@@ -1,7 +1,9 @@
 <script>
   import Container from "$lib/Container.svelte";
+  import CvSection from "$lib/CvSection.svelte";
   import PageTitle from "$lib/PageTitle.svelte";
   import SkillIcon from "$lib/SkillIcon.svelte";
+  import cv from "$lib/assets/json/cv.json";
   import skills from "$lib/assets/json/skills.json";
   import { Splide, SplideSlide } from "@splidejs/svelte-splide";
 
@@ -64,7 +66,7 @@
 
   <h3 class="title is-4 mt-6">Sprachen & Frameworks</h3>
 
-  <div class="p-6 has-background-white-ter rounded">
+  <div class="p-6 has-background-white-bis rounded">
     <Splide
       options={splideOptions}
       aria-label="Diese Sprachen und Frameworks benutze ich..."
@@ -77,4 +79,8 @@
       {/each}
     </Splide>
   </div>
+
+  <h4 class="title is-4 mt-6">Qualifikationen</h4>
+
+  {#each cv as section}<CvSection cv={section} />{/each}
 </Container>

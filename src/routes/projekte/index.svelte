@@ -1,21 +1,20 @@
+<!--
 <script context="module">
-  export const load = async ({ fetch }) => {
-    const projects = await fetch("/api/projekte.json");
-    const allProjects = await projects.json();
-
+  export const Load = async ({ fetch }) => {
+    // const projects = await fetch("/api/projekte.json");
+    // const allProjects = await projects.json();
+    // console.log(allProjects);
     return {
-      props: {
-        projects: allProjects,
-      },
+      projects: {},
     };
   };
 </script>
-
+-->
 <script>
-  import CardProject from "$lib/CardProject.svelte";
+  // import CardProject from "$lib/CardProject.svelte";
   import Container from "$lib/Container.svelte";
   import PageTitle from "$lib/PageTitle.svelte";
-  export let projects;
+  // export let projects;
 </script>
 
 <svelte:head>
@@ -28,8 +27,10 @@
   </PageTitle>
 
   <div class="columns is-multiline mt-6">
+    <!--
     {#each projects as project}
       <CardProject {project} />
     {/each}
+    -->
   </div>
 </Container>

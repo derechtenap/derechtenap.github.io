@@ -2,22 +2,23 @@
   "name": "derechtenap.github.io",
   "version": "0.0.1",
   "scripts": {
-    "dev": "svelte-kit dev",
-    "build": "svelte-kit build",
+    "dev": "vite dev",
+    "build": "vite build",
     "package": "svelte-kit package",
-    "preview": "svelte-kit preview",
+    "preview": "vite preview",
     "prepare": "svelte-kit sync"
   },
   "devDependencies": {
     "@splidejs/svelte-splide": "^0.2.9",
     "@sveltejs/adapter-static": "^1.0.0-next.31",
-    "@sveltejs/kit": "1.0.0-next.338",
+    "@sveltejs/kit": "^1.0.0-next.405",
     "bootstrap-icons": "^1.8.1",
     "bulma": "^0.9.4",
     "mdsvex": "^0.10.6",
     "sass": "^1.57.1",
     "svelte": "^3.46.0",
-    "svelte-preprocess": "^4.10.7"
+    "svelte-preprocess": "^4.10.7",
+    "vite": "^3.0.0"
   },
   "type": "module"
 }
