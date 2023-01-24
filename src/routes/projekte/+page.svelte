@@ -1,16 +1,20 @@
 <!--
 <script context="module">
-  export const Load = async ({ fetch }) => {
-    // const projects = await fetch("/api/projekte.json");
-    // const allProjects = await projects.json();
-    // console.log(allProjects);
-    return {
-      projects: {},
-    };
-  };
+  throw new Error("@migration task: Check code was safely removed (https://github.com/sveltejs/kit/discussions/5774#discussioncomment-3292722)");
+
+  // export const Load = async ({ fetch }) => {
+  //   // const projects = await fetch("/api/projekte.json");
+  //   // const allProjects = await projects.json();
+  //   // console.log(allProjects);
+  //   return {
+  //     projects: {},
+  //   };
+  // };
 </script>
 -->
 <script>
+  throw new Error("@migration task: Add data prop (https://github.com/sveltejs/kit/discussions/5774#discussioncomment-3292707)");
+
   // import CardProject from "$lib/CardProject.svelte";
   import Container from "$lib/Container.svelte";
   import PageTitle from "$lib/PageTitle.svelte";
