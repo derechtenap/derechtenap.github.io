@@ -1,6 +1,0 @@
-- Project ("/projekte") page is not working
-  - Find a new way to fetch the markdown files
-  - Display the data on the page
-- Update the Bootstrap Icons Pack or use a different pack
-- Clean up project
-  - `svelte.config.js` seems to be a leftover since `sveltekit` now uses `vite`
