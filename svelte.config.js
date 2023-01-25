@@ -1,12 +1,12 @@
 import adapter from '@sveltejs/adapter-static';
 // import { vitePreprocess } from '@sveltejs/kit/vite';
-import sveltePreprocess from 'svelte-preprocess';
+// import sveltePreprocess from 'svelte-preprocess';
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
 	// Consult https://kit.svelte.dev/docs/integrations#preprocessors
 	// for more information about preprocessors
-	preprocess: [sveltePreprocess()],
+	//preprocess: [sveltePreprocess()],
 
 	// TODO: Check if this config still works...
 	// I used it to deploy the site to github around may 2022
