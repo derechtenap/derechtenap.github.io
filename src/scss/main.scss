@@ -1,0 +1,28 @@
+@charset "utf-8";
+
+// Update Bulma's global variables
+
+// Update some of Bulma's component variables
+
+// Import only what you need from Bulma
+@import '../node_modules/bulma/sass/utilities/_all.sass';
+@import '../node_modules/bulma/sass/base/_all.sass';
+@import '../node_modules/bulma/sass/elements/button.sass';
+@import '../node_modules/bulma/sass/elements/container.sass';
+@import '../node_modules/bulma/sass/elements/title.sass';
+@import '../node_modules/bulma/sass/form/_all.sass';
+@import '../node_modules/bulma/sass/components/navbar.sass';
+@import '../node_modules/bulma/sass/layout/hero.sass';
+@import '../node_modules/bulma/sass/layout/section.sass';
+
+/*
+ *
+ * Override the `overflow-y: scroll` rule inherited from the Bulma Utilities
+ * to ensure that the vertical scrollbar is not unnecessarily visible on the page.
+ * Setting `overflow-y` to `auto` enables the scrollbar to appear only when needed.
+ *
+ */
+
+html {
+	overflow-y: auto;
+}
