@@ -1,4 +1,4 @@
-import { config, fields, collection } from '@keystatic/core';
+import { config, collection, fields } from '@keystatic/core';
 
 export default config({
   storage: {
@@ -8,7 +8,7 @@ export default config({
     posts: collection({
       label: 'Posts',
       slugField: 'title',
-      path: 'src/content/posts/*',
+      path: 'posts/*',
       format: { contentField: 'content' },
       schema: {
         title: fields.slug({ name: { label: 'Title' } }),
@@ -17,10 +17,7 @@ export default config({
           formatting: true,
           dividers: true,
           links: true,
-          images: {
-            directory: 'src/assets/images/posts',
-            publicPath: '../../assets/images/posts/',
-          },
+          images: true,
         }),
       },
     }),
