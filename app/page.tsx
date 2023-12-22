@@ -1,18 +1,16 @@
 import Link from 'next/link';
 import { reader } from './reader';
 import './styles.css';
+import { Button } from '@components/ui/button';
 
 export default async function Homepage() {
   const posts = await reader.collections.posts.all();
 
   return (
-    <div>
-      <h1>Keystatic ⚡️</h1>
-      <p>This homepage shows how to load a collection from the reader API.</p>
-      <p>
-        <a href="/keystatic">Click here to visit the Admin UI</a>, or the link
-        below to view a post in the collection.
-      </p>
+    <>
+      <h1 className="text-blue-800">Tim Deres</h1>
+      <Button variant="secondary">Hello</Button>
+      <p>Web Developer</p>
       <h2>Posts</h2>
       <ul>
         {posts.map(post => (
@@ -21,6 +19,6 @@ export default async function Homepage() {
           </li>
         ))}
       </ul>
-    </div>
+    </>
   );
 }
