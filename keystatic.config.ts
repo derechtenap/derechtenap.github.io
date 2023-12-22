@@ -1,4 +1,5 @@
 import { config, collection, fields } from '@keystatic/core';
+import React from "react"
 
 export default config({
   storage: {
@@ -22,4 +23,11 @@ export default config({
       },
     }),
   },
+  ui: {
+    // Brand icon and name for the `Keystatic` dashboard
+    brand: {
+      name: "Tim Deres",
+      mark: () => {return React.createElement("img", { alt: "Logo", height: 24, src: "/favicon.png", })}
+    }
+  }
 });
