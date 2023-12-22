@@ -5,8 +5,8 @@
       "@components/*": [
         "components/*"
       ],
-      "@lib/utils": [
-        "lib/utils/*"
+      "@lib/*": [
+        "lib/*"
       ]
     },
     "target": "esnext",
