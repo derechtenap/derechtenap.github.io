@@ -1,37 +1,36 @@
 {
-	"name": "derechtenap.github.io",
-	"version": "0.0.1",
-	"private": true,
-	"scripts": {
-		"dev": "vite dev",
-		"build": "vite build",
-		"preview": "vite preview",
-		"test": "playwright test",
-		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
-		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
-		"test:unit": "vitest",
-		"lint": "prettier --plugin-search-dir . --check . && eslint .",
-		"format": "prettier --plugin-search-dir . --write ."
-	},
-	"devDependencies": {
-		"@playwright/test": "^1.33.0",
-		"@sveltejs/adapter-auto": "^1.0.3",
-		"@sveltejs/adapter-static": "^1.0.6",
-		"@sveltejs/kit": "^1.16.3",
-		"@typescript-eslint/eslint-plugin": "^5.59.5",
-		"@typescript-eslint/parser": "^5.59.5",
-		"autoprefixer": "^10.4.14",
-		"eslint": "^8.40.0",
-		"eslint-config-prettier": "^8.8.0",
-		"eslint-plugin-svelte3": "^4.0.0",
-		"prettier": "^2.8.8",
-		"prettier-plugin-svelte": "^2.10.0",
-		"svelte": "^3.59.1",
-		"svelte-check": "^3.3.2",
-		"tslib": "^2.5.0",
-		"typescript": "^4.9.5",
-		"vite": "^4.3.5",
-		"vitest": "^0.25.3"
-	},
-	"type": "module"
+  "name": "@keystatic/templates-nextjs",
+  "version": "0.0.15",
+  "license": "MIT",
+  "dependencies": {
+    "@keystatic/core": "^0.2.0",
+    "@keystatic/next": "^2.0.0",
+    "@radix-ui/react-slot": "^1.0.2",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.0.0",
+    "lucide-react": "^0.300.0",
+    "next": "^14.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.11",
+    "@types/node": "20.10.5",
+    "@types/react": "^18.2.8",
+    "autoprefixer": "^10.4.16",
+    "eslint": "^8.56.0",
+    "eslint-config-next": "14.0.4",
+    "postcss": "^8.4.32",
+    "prettier": "^3.1.1",
+    "tailwind-merge": "^2.2.0",
+    "tailwindcss": "^3.4.0",
+    "tailwindcss-animate": "^1.0.7",
+    "typescript": "^5.2.2"
+  },
+  "scripts": {
+    "build": "next build",
+    "dev": "next dev",
+    "lint": "next lint",
+    "start": "next start"
+  }
 }

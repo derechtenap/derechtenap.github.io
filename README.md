@@ -1,23 +1,20 @@
-# derechtenap.github.io
+# Keystatic in Next.js
 
-**Personal Portofilo Website - Build with Bootstrap Icons, Bulma, mdsvex and SvelteKit**
+This template shows how you can use Keystatic in a Next.js site that utilises
+the `app` directory.
 
-:sparkles: Special thanks to [Josh Collinsworth](https://joshcollinsworth.com/) for providing the very nice and detailed blog post _"[Let's learn SvelteKit by building a static Markdown blog from scratch](https://joshcollinsworth.com/blog/build-static-sveltekit-markdown-blog)"_. It helped me a lot to create this page.
-
-## Developing
-
-:heavy_exclamation_mark: Don't forget to install all dependencies using `npm i`.
+To setup:
 
 ```bash
-# Start a local development server and open the app in a new browser tab
-npm run dev -- --open
+npm install
 ```
 
-## Building and Previewing
+To run:
 
-```bash
-npm run build
-
-# Preview the built app
-npm run preview
 ```
+npm run dev
+```
+
+Admin UI: [http://127.0.0.1:3000/keystatic](http://127.0.0.1:3000/keystatic)
+
+Homepage: [http://localhost:3000](http://localhost:3000)
